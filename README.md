@@ -10,3 +10,4 @@ Rogério Marcon
 KAMILE ANIELI WAHLBRINCK
 Idelvan Felipe Wolhmuth
 Marco Antoni
+Vitor Hugo Lopes 
