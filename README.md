@@ -10,6 +10,7 @@ Rogério Marcon
 KAMILE ANIELI WAHLBRINCK
 Idelvan Felipe Wolhmuth
 Maria Helena Franciscatto
+Andressa Vergutz
 
 Marcelo Kunz
 =======
