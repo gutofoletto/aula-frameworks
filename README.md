@@ -16,3 +16,4 @@ Marco Antoni
 Vitor Hugo Lopes 
 Kelvin Salton do Prado
 Alessandro Alex Abran
+João Paulo Vieira
