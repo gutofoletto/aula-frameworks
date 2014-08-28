@@ -8,3 +8,4 @@ Antonio Augusto Foletto
 Anderson Raber
 Rogério Marcon
 KAMILE ANIELI WAHLBRINCK
+Idelvan Felipe Wolhmuth
