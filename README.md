@@ -11,6 +11,7 @@ KAMILE ANIELI WAHLBRINCK
 Idelvan Felipe Wolhmuth
 Maria Helena Franciscatto
 Andressa Vergutz
+Marco Antoni
 Marcelo Kunz
 Vitor Hugo Lopes 
 Kelvin Salton do Prado
