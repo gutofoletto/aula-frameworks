@@ -12,7 +12,6 @@ Idelvan Felipe Wolhmuth
 Maria Helena Franciscatto
 Andressa Vergutz
 Marcelo Kunz
-Marco Antoni
 Vitor Hugo Lopes 
 Kelvin Salton do Prado
 Alessandro Alex Abran
