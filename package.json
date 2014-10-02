@@ -1,0 +1,17 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "framework front-end",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gutofoletto",
+  "license": "mit",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

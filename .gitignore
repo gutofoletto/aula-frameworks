@@ -1,0 +1,10 @@
+._*
+.log
+.DS_Store
+.DS_Store?
+Thumbs.db
+node_modules
+.sass-cache
+*.sublime-*
+vendor
+error_log

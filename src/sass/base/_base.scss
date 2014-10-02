@@ -1,0 +1,17 @@
+@import "normalize";
+@import "vars";
+
+* {
+    @include box-sizing(border-box);
+}
+
+body {
+
+}
+
+a {
+    color: $color-primary;
+    &:hover{
+        color: darken($color-primary, 25);
+    }
+}

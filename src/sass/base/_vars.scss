@@ -1,0 +1,17 @@
+$col-number: 12;
+$col-padding: 10px;
+$border-radius: 5px;
+
+$media-desktop: 1280px;
+$media-tablet: 640px;
+$media-phone: 240px;
+
+$color-primary: rgba(155, 89, 182,1.0);
+$color-success: rgba(46, 204, 113,1.0);
+$color-error: rgba(231, 76, 60,1.0);
+$color-gray: rgba(236, 240, 241,1.0);
+
+$link-color: $color-primary !default;
+$link-hover-color: darken($color-primary, 25);
+$link-hover-background: darken($color-gray, 10);
+$link-hover-border: darken($color-gray, 25);
