@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Framework</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/framework.css">
+</head>
+<body>
+	
+	<form class="form-control">
+
+		<div class="col-12">
+
+			<label>Tamanhos de Input</label>
+			<hr>
+			<input type="text" class="form-input form-input-sm" placeholder="Input Pequeno">
+			<input type="text" class="form-input" placeholder="Input Padrão">
+			<input type="text" class="form-input form-input-lg" placeholder="Input Grande">
+
+			<br>
+			<label>Estados de Input</label>
+			<hr>
+			<label class="form-label">Nome </label>
+			<input type="text" class="form-input" placeholder="Digite seu nome">
+
+			<label class="form-label">E-mail </label>
+			<input type="email" class="form-input" value="Readonly" readonly>
+
+			<label class="form-label">Senha </label>
+			<input type="password" class="form-input" value="Disabled" disabled>
+			
+			<br>
+			<label>Checkbox</label>
+			<hr>
+			<div class="form-checkbox">
+	      		<input type="checkbox"> Checkbox 1
+	      	</div>
+	      	<div class="form-checkbox">
+	      		<input type="checkbox"> Checkbox 2
+	      	</div>
+	      	<div class="form-checkbox">
+	      		<input type="checkbox" disabled> Checkbox 3
+	      	</div>
+			
+			<br>
+			<label>File Input</label>
+			<hr>
+	      	<label class="form-label">File input</label>
+		    <input type="file" class="form-input-file">
+		    <p class="form-help-text">Exemplo de texto de ajuda. Selecione um arquivo.</p>
+			
+			<br>
+			<label>Radio Button</label>
+			<hr>
+			<div class="form-radio">
+			    <input type="radio" name="radioGroup" value="radio1" checked> Radio 1
+			</div>
+			<div class="form-radio">
+			    <input type="radio" name="radioGroup" value="radio2"> Radio 2
+			</div>
+			<div class="form-radio">
+			    <input type="radio" name="radioGroup" value="radio3" disabled> Radio 3 Disabled
+			</div>
+			
+			<br>
+			<label>Range Input</label>
+			<hr>
+			<input type="range" class="form-input-range" name="points" min="0" max="100">
+			
+			<br>
+			<label>Color Input</label>
+			<hr>
+			<div class="form-label">
+				Selecione uma cor:
+				<input type="color" name="favcolor">
+			</div>
+			
+			<br>
+			<label>Number Input</label>
+			<hr>
+			<div class="form-input-number">
+				<input type="number" min="0" max="100" step="1" value="50">
+			</div>
+
+		</div>
+
+  	</form>
+
+</body>
+</html>

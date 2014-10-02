@@ -25,13 +25,16 @@ $menu-item-active-border: darken($color-gray, 50);
 $menu-item-active-background: darken($color-gray, 5);
 
 /* Forms */
-$form-input-background: lighten($menu-background, 8);
+$form-input-background: lighten($color-gray, 8);
 $form-input-border: darken($color-gray, 20);
+$form-input-color: darken($color-gray, 80);
+$form-input-disabled-background: darken($color-gray, 6);
 
 $form-label-color: darken($color-gray, 70);
+$form-help-label-color: darken($color-gray, 40);
 
-$form-font-size-small: 12px;
+$form-font-size-sm: 12px;
 $form-font-size: 14px;
-$form-font-size-large: 16px;
+$form-font-size-lg: 16px;
 $form-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 /* Fim Forms */
