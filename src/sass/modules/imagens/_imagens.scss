@@ -1,0 +1,38 @@
+.thumbnails img{
+    border-radius:20%;
+    max-width: 100%; 
+    //box-shadow: 10px 10px 5px #ccc;
+    margin-bottom:10%;
+    
+    &:hover{
+         box-shadow: 10px 10px 5px #ccc;
+        transform: rotate(-8deg);
+            }
+}
+
+
+.redondo img{
+    border-radius:50%;
+    max-width: 100%; 
+    box-shadow: -10px -10px 10px #ccc;
+    margin-bottom:10%;
+     opacity:0.5;
+     -moz-opacity: 0.75;
+     filter: alpha(opacity=75);
+     -webkit-filter: opacity(0.75);
+    
+    &:hover{
+        opacity:1;
+        transition: opacity 1s;
+         -moz-opacity: 1;
+         filter: alpha(opacity=100);
+         -webkit-filter: opacity(1);
+         filter: none;
+            }
+}
+
+.centro{
+ margin:0 auto;
+    width:80%;
+    
+}
