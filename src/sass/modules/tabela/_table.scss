@@ -1,0 +1,56 @@
+table {
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table, %table{
+    width: 100%;
+    margin-bottom: $table-margin-bottom;
+   
+    & th,  td {
+        padding: $table-cell-padding;
+        text-align: $table-cell-text-align;
+        border-top: $table-cell-border-top;
+    }
+    
+    &.table th, %table th{
+       font-weight: $table-header-font-weight;
+       vertical-align: bottom;
+    }
+    &.table td, %table td{
+        vertical-align: top;
+    }
+    & thead:first-child tr th {
+        border-top: 0;
+    }
+    &.table tbody, %table tbody {
+        border-top: $table-body-border-top;
+    }
+}
+
+.table-condensed {
+    &th, td{
+        padding: $table-condensed-padding;
+    }
+}
+
+.table-bordered {
+    border: $table-bordered-border;
+    border-collapse: separate;
+    *border-collapse: collapsed;
+    border-radius: $table-bordered-border-radius;
+    
+    //&.table-bordered th + th + td + td , %table-bordered th + th + td + td {
+      //  border-left: $table-border-left;
+//    }
+   
+}
+
+
+.table-bordered th + th,%table-bordered th + th,.table-bordered td + td,%table-bordered td + td,.table-bordered th + td,%table-bordered th + td,.table-bordered td + th,%table-bordered td + th {
+    border-left: $table-border-left;
+}
+
+
+
+  
