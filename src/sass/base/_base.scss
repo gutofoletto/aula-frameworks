@@ -1,5 +1,5 @@
 @import "normalize";
-@import "vars";
+@import "../modules/modulo-form/vars";
 
 * {
     @include box-sizing(border-box);
