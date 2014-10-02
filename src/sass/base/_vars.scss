@@ -1,6 +1,8 @@
 $col-number: 12;
 $col-padding: 10px;
-$border-radius: 5px;
+$border-radius: 0px 0px 0px 0px ;
+
+
 
 $media-desktop: 1280px;
 $media-tablet: 640px;
@@ -11,7 +13,35 @@ $color-success: rgba(46, 204, 113,1.0);
 $color-error: rgba(231, 76, 60,1.0);
 $color-gray: rgba(236, 240, 241,1.0);
 
+// cores paineis (Anderson, Rogério)
+$painel-default: lighten(#95a5a6,20); 
+$painel-primary: #2980b9; 
+$painel-sucess: lighten(#27ae60,15); 
+$painel-warning: lighten(#f1c40f,14); 
+$painel-error: #e74c3c; 
+$painel-info: lighten(#3498db, 10);
+$borda-inferior: 0 0 5px 5px;
+$borda-superior: 5px 5px 0 0;
+
+$titulo-default: black; 
+$titulo-primary: darken(#2980b9,30);
+ $titulo-sucess: darken(#27ae60,30); 
+ $titulo-warning: darken(#f1c40f,30); 
+ $titulo-error: darken(#e74c3c,30); 
+ $titulo-info: darken(#3498db, 30);
+
+
+//#######################################################
+
+
+
+
 $link-color: $color-primary !default;
 $link-hover-color: darken($color-primary, 25);
 $link-hover-background: darken($color-gray, 10);
 $link-hover-border: darken($color-gray, 25);
+
+$menu-background: $color-gray;
+$menu-shadow: rgba(0,0,0,.5);
+$menu-item-active-border: $color-primary !default;
+$menu-item-active-background: darken($color-gray, 5);

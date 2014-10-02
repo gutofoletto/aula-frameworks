@@ -1,4 +1,5 @@
 .container {
+    padding-left: 10px;
     margin: 0;
     &:after {
         display: table;
@@ -7,31 +8,28 @@
     }
 }
 
-.container-padding {
-    padding-left: $col-padding;
-    padding-right: $col-padding;
-}
-
 [class*='col-'] {
     float: left;
     padding: 0 $col-padding;
 
-    .container &:first-of-type {
-        padding-left: 0;
-    }
-    .container &:last-of-type {
-        padding-right: 0;
+    @media (min-width: $media-desktop){
+        .container &:first-of-type {
+            padding-left: 0;
+        }
+        .container &:last-of-type {
+            padding-right: 0;
+        }
     }
 }
 
-//Loop que vai de 1 até o número de colunas
 @for $i from 1 through $col-number {
     .col-#{$i} {
         width: 100%;
     }
+}
 
-    // Media para criar colunas para tablets
-    @media (min-width: $media-tablet) and (max-width: $media-desktop){
+@media (min-width: $media-tablet) and (max-width: $media-desktop){
+    @for $i from 1 through $col-number {
         @if ($i < 4) {
             .col-#{$i}{
                 width: 25%;
@@ -48,9 +46,10 @@
             }
         }
     }
+}
 
-    //Media para criar colunas para desktop
-    @media (min-width: $media-desktop) {
+@media (min-width: $media-desktop) {
+    @for $i from 1 through $col-number {
         .col-#{$i} {
             width: percentage($i / $col-number);
         }
