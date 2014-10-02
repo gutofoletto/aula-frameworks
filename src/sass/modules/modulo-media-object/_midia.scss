@@ -1,0 +1,42 @@
+
+.midia{
+	display:inline-block;
+}
+
+.midia > .midia{
+	margin-left:110px;
+}
+
+.midia,
+.midia-corpo {
+  overflow: hidden;
+  margin-top: 10px;
+  text-align: justify;   
+}
+
+.midia:first-child {
+  margin-left: 0;
+}
+
+.midia-imagem {
+  display: block;
+}
+
+.midia-titulo {
+  margin: 0 0 5px;
+}
+
+.midia > .midia-esquerda {
+  margin-right: 10px;
+  float: left;
+}
+
+.midia > .midia-direita {
+  margin-left: 10px;
+  float: right;
+}
+
+.midia-lista {
+  margin-left: 0;
+  list-style: none;
+}
