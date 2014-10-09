@@ -35,5 +35,6 @@ module.exports = function(grunt) {
   // Define comandos para tarefas.
   grunt.registerTask('default', ['']);
   grunt.registerTask('dev', ['watch']);
+  grunt.registerTask('build', ['compass', 'cssmin']);
 
 };

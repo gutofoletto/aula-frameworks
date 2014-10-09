@@ -14,9 +14,9 @@
 	text-align: justify;
 	//text-indent: 5px;
 	@include box-shadow(0 0 7px $menu-shadow);
-	
+
 		display:block;
-	&-cab{
+	.painel-cab{
 		display:block;
 		background: $painel-default;
 		padding: 10px;
@@ -24,7 +24,7 @@
 		border-radius: 2px;
 		font-size: 20px;
 	}
-	&-corpo{
+	.painel-corpo{
 		display:block;
 		padding: 10px;
 		//
@@ -42,8 +42,8 @@
 
 	}
 }
-	
-	&-rodape{
+
+	.painel-rodape{
 		display:block;
 		background: $painel-default;
 		padding: 10px;
@@ -51,41 +51,41 @@
 		border-radius: 2px;
 
 	}
-	&.sucesso{
+	.painel.sucesso{
 		border-color: $painel-sucess;
-		.painel-cab, .painel-rodape{ 
+		.painel-cab, .painel-rodape{
 			color: $titulo-sucess;
 			background:$painel-sucess;
 		}
-		
+
 	}
-	&.aviso{
+	.painel.aviso{
 		.painel-cab, .painel-rodape{
 			color: $titulo-warning;
 			background:$painel-warning;
 		}
-		
+
 		border-color: $painel-warning;
 	}
-	&.erro{
+	.painel.erro{
 		.painel-cab, .painel-rodape{
 			color: $titulo-error;
 		background: $painel-error;
 	}
 		border-color: $painel-error;
 	}
-	&.informacao{
+	.painel.informacao{
 		.painel-cab, .painel-rodape{
 			color: $titulo-info;
 		background: $painel-info;
 	}
 		border-color: $painel-info;
 	}
-	&.primario{
+	.painel.primario{
 		.painel-cab, .painel-rodape{
 			color: $titulo-primary;
 			background: $painel-primary;
-			
+
 		}
 		border-color: $painel-primary;
 	}

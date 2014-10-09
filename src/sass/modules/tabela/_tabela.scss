@@ -1,3 +1,5 @@
+@import "vars";
+
 tabela {
     max-width: 100%;
     background-color: $table-background;
@@ -7,13 +9,13 @@ tabela {
 .tabela  {
     width: 100%;
     margin-bottom: $table-margin-bottom;
-   
+
     & th,  td {
         padding: $table-cell-padding;
         text-align: $table-cell-text-align;
         border-top: $table-cell-border-top;
     }
-    
+
     &.table th, %table th{
        font-weight: $table-header-font-weight;
        vertical-align: bottom;
@@ -39,7 +41,7 @@ tabela {
     border: $table-bordered-border;
     border-collapse: separate;
     *border-collapse: collapsed;
-    border-radius: $table-bordered-border-radius;   
+    border-radius: $table-bordered-border-radius;
 }
 
 
@@ -54,5 +56,3 @@ tabela {
         }
     }
 }
-
-  
