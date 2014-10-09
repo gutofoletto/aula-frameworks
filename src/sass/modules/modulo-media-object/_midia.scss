@@ -1,16 +1,17 @@
+@import "vars";
 
 .midia{
 	display:inline-block;
 }
 
 .midia > .midia{
-	margin-left:110px;
+	margin-left: 0;
 }
 
 .midia,
 .midia-corpo {
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: $midia-margem;
   text-align: justify;   
 }
 
@@ -27,16 +28,23 @@
 }
 
 .midia > .midia-esquerda {
-  margin-right: 10px;
+  margin-right: $midia-margem;
   float: left;
 }
 
 .midia > .midia-direita {
-  margin-left: 10px;
+  margin-left: $midia-margem;
   float: right;
 }
 
 .midia-lista {
   margin-left: 0;
   list-style: none;
+}
+
+@media (min-width:$media-tablet){
+  .midia > .midia{
+    margin-left: $midia-filha-margem;
+    background: #fff;
+  }
 }
