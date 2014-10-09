@@ -1,0 +1,45 @@
+
+/*$col-padding: 10px;
+$col-number: 12;
+
+$border-radius: 5px;
+
+$media-desktop: 1280px;
+$media-tablet: 640px;
+$media-phone: 240px;
+
+$color-primary: rgba(155, 89, 182, 1.0);
+$color-success: rgba(46, 204, 113, 1.0);
+$color-error: rgba(231, 76, 60, 1.0);
+$color-gray: rgba(236, 240, 241,1.0);
+
+$link-color: $color-primary;
+$link-hover-color: darken($link-color, 20);
+$link-hover-background: darken($color-gray, 5);
+$link-hover-border: darken($color-gray, 30);
+
+$menu-background: rgba(236, 240, 241,1.0);
+$menu-shadow: rgba(0, 0, 0, 5);
+
+$menu-item-active-border: darken($color-gray, 50);
+$menu-item-active-background: darken($color-gray, 5);*/
+
+/* Form */
+$border-radius: 5px;
+$color-warning: rgba(241, 196, 15, 1.0);
+
+$form-color-gray: $color-gray;
+
+$form-input-background: lighten($form-color-gray, 8);
+$form-input-border: darken($form-color-gray, 20);
+$form-input-color: darken($form-color-gray, 80);
+$form-input-disabled-background: darken($form-color-gray, 6);
+
+$form-label-color: darken($form-color-gray, 70);
+$form-help-label-color: darken($form-color-gray, 40);
+
+$form-font-size-sm: 12px;
+$form-font-size: 14px;
+$form-font-size-lg: 16px;
+$form-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+/* Fim Form */

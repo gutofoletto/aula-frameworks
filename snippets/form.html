@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Framework</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/framework.min.css">
+	<script type="text/javascript">
+		function Range(){
+			document.getElementById('range_val').innerHTML = document.getElementById('points').value;
+		}
+	</script>
+</head>
+<body onload="Range()">
+	
+	<form class="form">
+
+		<div class="col-12">
+
+			<label>Tamanhos de Caixas de Texto</label>
+			<p class="form-texto-ajuda">Exemplo de caixas de texto de tamanhos diferentes.</p>
+			<hr>
+			<input type="text" class="form-caixa-texto form-caixa-texto-p" placeholder="Caixa Texto Pequena">
+			<input type="text" class="form-caixa-texto" placeholder="Caixa Texto">
+			<input type="text" class="form-caixa-texto form-caixa-texto-g" placeholder="Caixa Texto Grande">
+		
+			<br>
+			<label>Estados de Caixas de Texto</label>
+			<p class="form-texto-ajuda">Exemplo de caixas de texto normal, readonly e disable.</p>
+			<hr>
+			<label class="form-etiqueta">Nome </label>
+			<input type="text" class="form-caixa-texto" placeholder="Digite seu nome">
+
+			<label class="form-etiqueta">E-mail</label>
+			<input type="email" class="form-caixa-texto" value="readonly" readonly>
+
+			<label class="form-etiqueta">Senha (Disabled) </label>
+			<input type="password" class="form-caixa-texto" value="Disabled" disabled>
+
+
+			<br>
+			<label>Validações de Caixas de Texto</label>
+			<p class="form-texto-ajuda">Exemplo de caixas de texto com erro, sucesso e aviso.</p>
+			<hr>
+			<label class="form-etiqueta">Caixa de Texto com Erro </label>
+			<input type="text" class="form-caixa-texto erro" placeholder="Erro">
+
+			<label class="form-etiqueta">Caixa de Texto com Sucesso  </label>
+			<input type="text" class="form-caixa-texto sucesso" placeholder="Sucesso">
+			
+			<label class="form-etiqueta">Caixa de Texto com Aviso  </label>
+			<input type="text" class="form-caixa-texto aviso" placeholder="Aviso">
+
+			
+			<br>
+			<label>Caixas de Seleção</label>
+			<p class="form-texto-ajuda">Exemplo de caixas de seleção.</p>
+			<hr>
+			<div class="form-caixa-selecao">
+	      		<input type="checkbox"> Checkbox 1
+	      	</div>
+	      	<div class="form-caixa-selecao">
+	      		<input type="checkbox"> Checkbox 2
+	      	</div>
+	      	<div class="form-caixa-selecao">
+	      		<input type="checkbox" disabled> Checkbox 3
+	      	</div>
+			
+			<br>
+			<label>Botões de Rádio</label>
+			<p class="form-texto-ajuda">Exemplo de botões de radio.</p>
+			<hr>
+			<div class="form-botao-radio">
+			    <input type="radio" name="radioGroup" value="radio1" checked> Radio 1
+			</div>
+			<div class="form-botao-radio">
+			    <input type="radio" name="radioGroup" value="radio2"> Radio 2
+			</div>
+			<div class="form-botao-radio">
+			    <input type="radio" name="radioGroup" value="radio3" disabled> Radio 3 Disabled
+			</div>
+			
+			<br>
+			<label>Entrada de Arquivo (file)</label>
+			<p class="form-texto-ajuda">Exemplo de entrada de arquivo.</p>
+			<hr>
+	      	<label class="form-etiqueta">Entrada de Arquivo</label>
+		    <input type="file" class="form-entrada-arquivo">
+		    <p class="form-texto-ajuda">Exemplo de texto de ajuda. Selecione um arquivo.</p>
+			
+			<br>
+			<label>Entrada de Alcance (range)</label>
+			<p class="form-texto-ajuda">Exemplo de entrada de alcance.</p>
+			<hr>
+			<input type="range" class="form-entrada-alcance" name="points" id="points" min="0" max="100" step="1" onmousemove="Range()">
+			<p class="form-texto-ajuda" id="range_val" style="margin-top: -6px">0</p>
+			
+			<br>
+			<label>Entrada de Cor (color)</label>
+			<p class="form-texto-ajuda">Exemplo de entrada de cor.</p>
+			<hr>
+			<div class="form-etiqueta">
+				Selecione uma cor:
+				<input type="color" name="favcolor" class="form-entrada-cor">
+			</div>			
+
+			<br>
+
+		</div>
+
+  	</form>
+
+</body>
+</html>

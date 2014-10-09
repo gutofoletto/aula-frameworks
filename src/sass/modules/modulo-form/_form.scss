@@ -1,0 +1,120 @@
+
+@import "vars";
+
+.form{
+	display: block;
+	padding: 10px 10px;
+}
+
+.form-caixa-texto{
+	font-size: $form-font-size;
+	font-family: $form-font-family;
+	width: 100%;
+	height: 30px;
+	background-color: $form-input-background;
+	border: 1px solid $form-input-border;
+	display: block;
+	padding: 0 10px;
+	color: $form-input-color;
+
+	@include border-radius($border-radius);
+
+	&:focus{
+		@include box-shadow(0px 0px 3px $color-primary);
+		border-color: lighten($color-primary, 20);
+	}
+	
+	&:disabled{
+		background-color: $form-input-disabled-background;
+		cursor: not-allowed;
+	}
+
+	&:-moz-read-only{
+		background-color: $form-input-disabled-background;
+	}
+	&:read-only{
+		background-color: $form-input-disabled-background;
+	}
+}
+
+.erro{
+	@include box-shadow(0px 0px 1px $color-error);
+	border-color: $color-error;
+}
+
+.sucesso{
+	@include box-shadow(0px 0px 1px $color-success);
+	border-color: $color-success;
+}
+
+.aviso{
+	@include box-shadow(0px 0px 1px $color-warning);
+	border-color: $color-warning;
+}
+
+.form-caixa-texto-g{
+	height: 35px;
+	font-size: $form-font-size-lg;
+}
+
+.form-caixa-texto-p{
+	height: 25px;
+	font-size: $form-font-size-sm;
+}
+
+.form-caixa-selecao{
+	padding-top: 5px;
+	display: block;
+	font-size: $form-font-size;
+	font-family: $form-font-family;
+	font-weight: bold;
+	color: $form-label-color;
+
+	input[type=checkbox]:checked{
+		@include box-shadow(0px 0px 2px $color-primary);
+	}
+}
+
+.form-botao-radio{
+	font-size: $form-font-size;
+	font-family: $form-font-family;
+	font-weight: bold;
+	color: $form-label-color;
+
+	input[type=checkbox]:checked{
+		@include box-shadow(0px 0px 2px $color-primary);
+	}
+}
+
+.form-etiqueta{
+	font-size: $form-font-size;
+	font-family: $form-font-family;
+	color: $form-label-color;
+	font-weight: bold;
+	display: block;
+	padding-bottom: 5px;
+	padding-top: 10px;
+}
+
+.form-texto-ajuda{
+	font-size: $form-font-size;
+	font-family: $form-font-family;
+	color: $form-help-label-color;
+	font-style: italic;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.form-entrada-arquivo{
+	font-size: $form-font-size;
+	font-family: $form-font-family;
+	cursor: pointer;
+}
+
+.form-entrada-alcance{
+	width: 100%;
+}
+
+.form-entrada-cor{
+	@include box-shadow(0px 0px 2px $color-primary);
+}
