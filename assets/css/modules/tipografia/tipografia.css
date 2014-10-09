@@ -1,0 +1,288 @@
+@charset "UTF-8";
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: verdana, sans-serif, arial;
+  font-size: 16px;
+  font-weight: 500px;
+  color: black;
+  margin-left: 8%;
+}
+
+h1, .h1 {
+  font-size: 2.3em;
+}
+
+h2, .h2 {
+  font-size: 1.9em;
+}
+
+h3, .h3 {
+  font-size: 1.5em;
+}
+
+h4, .h4 {
+  font-size: 1.1em;
+}
+
+h5, .h5 {
+  font-size: 0.8em;
+}
+
+h6, .h6 {
+  font-size: 0.6em;
+}
+
+/*quando ├® utilizada a tag small dentro da tag h*/
+h1 small, h2 small, h3 small {
+  font-size: 65%;
+}
+
+h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h4 small, h5 small, h6 small {
+  font-size: 75%;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+/*paragrafo*/
+p {
+  font-family: verdana, sans-serif, arial;
+  color: black;
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+
+small {
+  font-size: 85%;
+}
+
+cite {
+  font-style: normal;
+}
+
+mark {
+  padding: .2em;
+  background-color: #fcf8e3;
+}
+
+/*alinhamento de texto*/
+.texto-esquerda {
+  text-align: left;
+}
+
+.texto-direita {
+  text-align: right;
+}
+
+.texto-centralizado {
+  text-align: center;
+}
+
+.texto-justificado {
+  text-align: justify;
+}
+
+.texto-minusculo {
+  text-transform: lowercase;
+}
+
+.texto-maiusculo {
+  text-transform: uppercase;
+}
+
+.texto-inicio-maiuscula {
+  text-transform: capitalize;
+}
+
+/*textos caracterizados*/
+.texto-sucesso {
+  color: #238e23;
+}
+
+.texto-informativo {
+  color: palevioletred;
+}
+
+.texto-aviso {
+  color: orange;
+}
+
+.texto-perigo {
+  color: red;
+}
+
+/* ########## LINKS ########### */
+a {
+  color: #3299cc;
+  text-decoration: none;
+  font-style: italic;
+}
+
+a:active,
+a:hover {
+  color: #143d51;
+}
+
+a:visited {
+  color: #8e44ad;
+}
+
+/*links caracterizados com :hover*/
+a.texto-successo:hover {
+  color: #2b542c;
+}
+
+a.texto-informativo:hover {
+  color: #245269;
+}
+
+a.texto-aviso:hover {
+  color: #66512c;
+}
+
+a.texto-perigo:hover {
+  color: #843534;
+}
+
+/*########## ICONES ########### */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-gjri07");
+  src: url("../fonts/icomoon.eot?#iefix-gjri07") format("embedded-opentype"), url("../fonts/icomoon.woff?-gjri07") format("woff"), url("../fonts/icomoon.ttf?-gjri07") format("truetype"), url("../fonts/icomoon.svg?-gjri07#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icone-"], [class*=" icone-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 2;
+  margin: 5px;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icone-inicio:before {
+  content: "\e600";
+}
+
+.icone-camera:before {
+  content: "\e601";
+}
+
+.icone-musica:before {
+  content: "\e602";
+}
+
+.icone-filmadora:before {
+  content: "\e603";
+}
+
+.icone-internet:before {
+  content: "\e604";
+}
+
+.icone-envelope:before {
+  content: "\e605";
+}
+
+.icone-usuario:before {
+  content: "\e606";
+}
+
+.icone-config:before {
+  content: "\e607";
+}
+
+.icone-configuracoes:before {
+  content: "\e608";
+}
+
+.icone-sair:before {
+  content: "\e609";
+}
+
+.icone-confirmar:before {
+  content: "\e60a";
+}
+
+.icone-alerta:before {
+  content: "\e60b";
+}
+
+.icone-play:before {
+  content: "\e60c";
+}
+
+.icone-pausar:before {
+  content: "\e60d";
+}
+
+.icone-parar:before {
+  content: "\e60e";
+}
+
+.icone-ultimo:before {
+  content: "\e60f";
+}
+
+.icone-primeiro:before {
+  content: "\e610";
+}
+
+.icone-volume-mais:before {
+  content: "\e611";
+}
+
+.icone-volume-medio:before {
+  content: "\e612";
+}
+
+.icone-volume-menos:before {
+  content: "\e613";
+}
+
+.icone-direita:before {
+  content: "\e614";
+}
+
+.icone-esquerda:before {
+  content: "\e615";
+}
+
+.icone-email:before {
+  content: "\e616";
+}
+
+.icone-googleplus:before {
+  content: "\e617";
+}
+
+.icone-google-drive:before {
+  content: "\e618";
+}
+
+.icone-facebook:before {
+  content: "\e619";
+}
+
+.icone-instagram:before {
+  content: "\e61a";
+}
+
+.icone-twitter:before {
+  content: "\e61b";
+}
+
+.icone-github:before {
+  content: "\e61c";
+}
