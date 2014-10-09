@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* THEME */
 /* BASE */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -433,72 +434,86 @@ a:hover {
   border-bottom: 5px solid #9b59b6;
 }
 
-.cantos {
-  -moz-border-radius: 0px 0px 0px 0px;
-  -webkit-border-radius: 0px;
-  border-radius: 0px 0px 0px 0px;
+/*Painéis (Anderson, Rogério) */
+/*.cantos{
+	@include border-radius($border-radius);
+    @include box-shadow(0 0 7px $menu-shadow);
+}
+*/
+.painel {
+  border: 2px solid;
+  border-color: #ccd4d5;
+  border-radius: 5px;
+  padding: 3px;
+  text-align: justify;
   -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin-bottom: 2%;
 }
-
-.margem-painel {
-  margin-bottom: 20px;
-}
-
-p {
-  white-space: nowrap;
-  width: 100%;
-  text-align: justify;
-  hyphens: auto;
-}
-
-.painel {
-  list-style: none;
-  padding: 10px 10px 10px 10px;
-  border: 1px solid #ccd4d5;
-  border-radius: 5px 5px 0 0;
-}
-.painel-default {
-  color: black;
+.painel-cab {
+  display: block;
   background: #ccd4d5;
-  border-color: #ccd4d5;
+  padding: 10px;
+  text-indent: 0px;
+  border-radius: 2px;
+  font-size: 20px;
 }
-.painel-sucess {
-  color: #0b311b;
+.painel-corpo {
+  display: block;
+  padding: 10px;
+  text-align: justify;
+  margin: 2px 0px;
+}
+.painel-corpo p {
+  margin: 0px;
+  text-indent: 20px;
+}
+.painel-corpo img {
+  max-width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+.painel-rodape {
+  display: block;
+  background: #ccd4d5;
+  padding: 10px;
+  text-indent: 0px;
+  border-radius: 2px;
+}
+.painel.sucesso {
   border-color: #4bd786;
+}
+.painel.sucesso .painel-cab, .painel.sucesso .painel-rodape {
+  color: #0b311b;
   background: #4bd786;
 }
-.painel-warning {
-  color: #614f06;
+.painel.aviso {
   border-color: #f5d552;
+}
+.painel.aviso .painel-cab, .painel.aviso .painel-rodape {
+  color: #614f06;
   background: #f5d552;
 }
-.painel-error {
-  color: #7b190f;
+.painel.erro {
   border-color: #e74c3c;
+}
+.painel.erro .painel-cab, .painel.erro .painel-rodape {
+  color: #7b190f;
   background: #e74c3c;
 }
-.painel-info {
-  color: #124364;
+.painel.informacao {
   border-color: #5faee3;
+}
+.painel.informacao .painel-cab, .painel.informacao .painel-rodape {
+  color: #124364;
   background: #5faee3;
 }
-.painel-primary {
-  color: #0d293c;
+.painel.primario {
   border-color: #2980b9;
+}
+.painel.primario .painel-cab, .painel.primario .painel-rodape {
+  color: #0d293c;
   background: #2980b9;
-}
-.painel-footer {
-  background: #ccd4d5;
-}
-.painel-heading {
-  font-size: 14px;
-  background: #ccd4d5;
-}
-.painel-body {
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 2px solid #ccd4d5;
-  border-radius: 0px 0px 5px 5px;
 }

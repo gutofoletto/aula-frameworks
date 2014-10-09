@@ -1,0 +1,93 @@
+@import "modules/painel/vars";
+/*.cantos{
+	@include border-radius($border-radius);
+    @include box-shadow(0 0 7px $menu-shadow);
+}
+*/
+
+.painel{
+	border: 2px solid;
+	border-color: $painel-default;
+	border-radius: 5px;
+	padding: 3px;
+	//text-indent: 20px;
+	text-align: justify;
+	//text-indent: 5px;
+	@include box-shadow(0 0 7px $menu-shadow);
+	
+		display:block;
+	&-cab{
+		display:block;
+		background: $painel-default;
+		padding: 10px;
+		text-indent: 0px;
+		border-radius: 2px;
+		font-size: 20px;
+	}
+	&-corpo{
+		display:block;
+		padding: 10px;
+		//
+		//white-space: pre-wrap;
+		text-align: justify;
+		margin: 2px 0px;
+		p{
+			margin: 0px;
+			text-indent: 20px;
+		}
+		img{
+		max-width: 100%;
+		display: block;
+		border-radius: 5px;
+
+	}
+}
+	
+	&-rodape{
+		display:block;
+		background: $painel-default;
+		padding: 10px;
+		text-indent: 0px;
+		border-radius: 2px;
+
+	}
+	&.sucesso{
+		border-color: $painel-sucess;
+		.painel-cab, .painel-rodape{ 
+			color: $titulo-sucess;
+			background:$painel-sucess;
+		}
+		
+	}
+	&.aviso{
+		.painel-cab, .painel-rodape{
+			color: $titulo-warning;
+			background:$painel-warning;
+		}
+		
+		border-color: $painel-warning;
+	}
+	&.erro{
+		.painel-cab, .painel-rodape{
+			color: $titulo-error;
+		background: $painel-error;
+	}
+		border-color: $painel-error;
+	}
+	&.informacao{
+		.painel-cab, .painel-rodape{
+			color: $titulo-info;
+		background: $painel-info;
+	}
+		border-color: $painel-info;
+	}
+	&.primario{
+		.painel-cab, .painel-rodape{
+			color: $titulo-primary;
+			background: $painel-primary;
+			
+		}
+		border-color: $painel-primary;
+	}
+margin-bottom: 2%;
+}
