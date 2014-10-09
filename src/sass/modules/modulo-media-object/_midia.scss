@@ -1,0 +1,50 @@
+@import "vars";
+
+.midia{
+	display:inline-block;
+}
+
+.midia > .midia{
+	margin-left: 0;
+}
+
+.midia,
+.midia-corpo {
+  overflow: hidden;
+  margin-top: $midia-margem;
+  text-align: justify;   
+}
+
+.midia:first-child {
+  margin-left: 0;
+}
+
+.midia-imagem {
+  display: block;
+}
+
+.midia-titulo {
+  margin: 0 0 5px;
+}
+
+.midia > .midia-esquerda {
+  margin-right: $midia-margem;
+  float: left;
+}
+
+.midia > .midia-direita {
+  margin-left: $midia-margem;
+  float: right;
+}
+
+.midia-lista {
+  margin-left: 0;
+  list-style: none;
+}
+
+@media (min-width:$media-tablet){
+  .midia > .midia{
+    margin-left: $midia-filha-margem;
+    background: #fff;
+  }
+}
