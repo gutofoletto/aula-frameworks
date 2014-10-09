@@ -1,0 +1,31 @@
+@import "vars.scss";
+@import "base/vars.scss";
+.menu {
+    list-style: none;
+    background: $menu-background;
+    padding: 0 10px;
+    @include border-radius($border-radius);
+    @include box-shadow(0 0 10px $menu-shadow);
+    .menu-item {
+        display: inline-block;
+        a {
+            color: $link-color;
+            padding: 10px;
+            display: block;
+            &:hover, &:active, &:focus {
+                color: $link-hover-color;
+                background: $link-hover-background;
+                border-bottom: 5px solid $link-hover-border;
+            }
+        }
+    }
+    .menu-item-active {
+        a {
+            background: $menu-item-active-background;
+            border-bottom: 5px solid $menu-item-active-border;
+            &:hover, &:active, &:focus {
+
+            }
+        }
+    }
+}

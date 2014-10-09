@@ -1,0 +1,6 @@
+@import "base/vars";
+
+$menu-background: $color-gray;
+$menu-shadow: rgba(0,0,0,.5);
+$menu-item-active-border: $color-primary !default;
+$menu-item-active-background: darken($color-gray, 5);
