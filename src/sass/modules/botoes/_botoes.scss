@@ -1,0 +1,56 @@
+@import "_vars.scss";
+.botao {
+	display: inline-block;
+	background-color: #ccc;
+	//color: #444;
+	padding: 6px 13px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border: 0px;
+	border-radius: 5px;
+	color: #fff;
+
+		&:active {
+		//	background-color: $botao-normal-active;
+			@include box-shadow(inset 0 3px 5px rgba(0, 0, 0, .125));
+		}
+
+		&.botao-normal {
+			background-color: $botao-normal;
+		}
+
+		&:hover {
+			background-color: darken($botao-normal, 20);
+		}
+
+	
+
+	&.botao-sucesso {
+		background-color: $botao-sucesso;
+
+		&:hover {
+			background-color: darken($botao-sucesso, 20);
+
+	}
+
+}
+	&.botao-erro {
+		background-color: $botao-erro;
+
+		&:hover {
+			background-color: darken($botao-erro, 20);
+		}
+	}
+
+	&.desativado,
+	&[disabled],
+  	fieldset[disabled], &:hover {
+		cursor: not-allowed;	
+		// pointer-events: none;	
+		@include opacity(.65);
+
+	
+	}
+
+}
