@@ -1,0 +1,14 @@
+.grupo-botao {
+
+  :not(:first-child) {
+    margin-left: -6px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  
+  :not(:last-child) {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+}
