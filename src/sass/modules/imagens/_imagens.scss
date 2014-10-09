@@ -11,9 +11,14 @@
          //box-shadow: 10px 10px 5px $color-shadow;
          @include box-shadow(10px 10px 5px $color-shadow);
         transform: rotate(-8deg);
-
+        -o-transform: rotate(-8deg);
+        -moz-transform: rotate(-8deg);
+        -webkit-transform: rotate(-8deg);
     }
 }
+
+
+
 
 
 .surgir{
