@@ -16,6 +16,8 @@
 	display: block;
 	padding: 0 10px;
 	color: $form-input-color;
+	margin-bottom: 10px;
+	margin-top: 8px;
 
 	@include border-radius($border-radius);
 
@@ -92,8 +94,6 @@
 	color: $form-label-color;
 	font-weight: bold;
 	display: block;
-	padding-bottom: 5px;
-	padding-top: 10px;
 }
 
 .form-texto-ajuda{
